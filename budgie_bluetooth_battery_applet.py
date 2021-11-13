@@ -86,7 +86,7 @@ class BudgieBluetoothBatteryApplet(Budgie.Applet):
         self.uuid = uuid
         self.settings = Gio.Settings.new(schema_id=SCHEMA)
 
-        self.box = Gtk.EventBox()
+        self.box = Gtk.Grid()
 
         self.icon = Gtk.Image.new_from_icon_name(
             "bluetooth-battery-applet-symbolic",
@@ -94,9 +94,11 @@ class BudgieBluetoothBatteryApplet(Budgie.Applet):
         )
 
         self.label = Gtk.Label()
+        self.label.set_vexpand(True)
+        self.label.set_valign(Gtk.Align.CENTER)
 
-        self.box.add(self.icon)
-        self.box.add(self.label)
+        self.box.attach(self.icon, 1, 1, 1, 1)
+        self.box.attach(self.label, 2, 1, 1, 1)
         self.add(self.box)
         self.box.show_all()
         self.show_all()
