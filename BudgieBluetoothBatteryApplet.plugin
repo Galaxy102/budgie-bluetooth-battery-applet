@@ -1,0 +1,9 @@
+[Plugin]
+Loader=python3
+Module=budgie_bluetooth_battery_applet
+Name=BluetoothBatteryApplet
+Description=Show the Battery percentage of a connected bluetooth device
+Authors=Konstantin Köhring
+Copyright=© 2021 Konstantin Köhring
+Website=https://github.com/GaLaXy102/budgie-bluetooth-battery-applet
+Icon=bluetooth-battery-applet-symbolic
