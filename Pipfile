@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+PyGObject = "~=3.42.0"
+bluetooth-battery = ">=1.3.2"
+
+[dev-packages]
+
+[requires]
+python_version = ">=3.6"
