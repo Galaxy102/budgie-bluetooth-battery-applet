@@ -5,7 +5,7 @@
         <key type="s" name="device">
             <summary>Set the MAC address of the observed device</summary>
             <description>The MAC address of the device to get the battery percentage of</description>
-            <default>00:00:00:00:00:00</default>
+            <default>"00:00:00:00:00:00"</default>
         </key>
     </schema>
 </schemalist>
